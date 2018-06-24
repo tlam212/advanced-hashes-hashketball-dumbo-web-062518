@@ -102,9 +102,9 @@ def player_numbers(team)
       team_data.each do |attribute, values|
           if attribute == :players
             values.each do |person, data|
-              data.each do |i, j|
+              data.each do |key, number|
                 if i == :number
-                  numbers.push(j)
+                  numbers.push(number)
                 end
  end
             end
