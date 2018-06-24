@@ -82,7 +82,7 @@ names = []
   return names
 end
 def player_stats(player_name)
-  array2=[]
+  stats=[]
   game_hash.each do |location, team_data|
       team_data.each do |attribute, values|
           if attribute == :players
@@ -94,7 +94,7 @@ def player_stats(player_name)
           end
       end
   end
-  return array2[0]
+  return stats[0]
 end
 def player_numbers(team)
   array2 = []
