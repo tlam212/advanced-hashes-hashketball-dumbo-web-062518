@@ -74,7 +74,7 @@ names = []
   game_hash.each do |location, team_data|
       team_data.each do |attribute, values|
           if attribute == :team_name
-                array2.push(values)
+                names.push(values)
 
             end
           end
@@ -88,7 +88,7 @@ def player_stats(player_name)
           if attribute == :players
             values.each do |person, data|
                 if person == player_name
-                  array2.push(data )
+                  stats.push(data )
                 end
             end
           end
