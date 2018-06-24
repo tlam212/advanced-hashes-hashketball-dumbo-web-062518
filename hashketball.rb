@@ -70,7 +70,7 @@ def team_colors(team)
 end
 
 def team_names
-array2 = []
+names = []
   game_hash.each do |location, team_data|
       team_data.each do |attribute, values|
           if attribute == :team_name
@@ -79,7 +79,7 @@ array2 = []
             end
           end
   end
-  return array2
+  return names
 end
 def player_stats(player_name)
   array2=[]
