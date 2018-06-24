@@ -26,8 +26,8 @@ end
 
 def num_points_scored(name)
 points = []
-game_hash.each do |stadium, stats|
-    stats.each do |attribute, data|
+game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
         if attribute == :players
           data.each do |player, value|
             value.each do |key, point|
@@ -43,7 +43,7 @@ return points[0]
 end
 def shoe_size(name)
 sizes = []
-game_hash.each do |stadium, stats|
+game_hash.each do |location, team_data|
     stats.each do |attribute, data|
         if attribute == :players
           data.each do |player, value|
