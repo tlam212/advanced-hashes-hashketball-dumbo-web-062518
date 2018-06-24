@@ -44,7 +44,7 @@ end
 def shoe_size(name)
 sizes = []
 game_hash.each do |location, team_data|
-    stats.each do |attribute, data|
+    team_data.each do |attribute, data|
         if attribute == :players
           data.each do |player, value|
             value.each do |key, size|
